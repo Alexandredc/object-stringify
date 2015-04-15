@@ -1,6 +1,6 @@
 # Object-stringify
 
-A useful little library which allow to have a string representation of an js object like. Like JSON.parse but include functions.
+A useful little library which allow to have a string representation of an js object like JSON.parse but include functions.
 
 ## Install
 ```shell
