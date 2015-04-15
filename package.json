@@ -1,6 +1,6 @@
 {
   "name": "object-stringify",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A small library that convert an object into a string like JSON.stringify but including functions",
   "main": "index.js",  
   "scripts": {
