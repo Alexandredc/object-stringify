@@ -1,6 +1,6 @@
 # Object-stringify
 
-A useful little library which allow to have a string representation of an js object like JSON.stringify but include functions.
+Allow to convert Javascript Object into string including functions
 
 ## Install
 ```shell
