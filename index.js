@@ -41,9 +41,11 @@ module.exports = function objectStringify(object, opt) {
     var dateObjRegex = /'new Date\('[0-Z-.]+'\)'/g;
     var dates = o.match(dateObjRegex);
 
-    dates.forEach(function(date){
-        o = o.replace(date, date.slice(1, -1));
-    });
+    if(dates){
+        dates.forEach(function(date){
+            o = o.replace(date, date.slice(1, -1));
+        });
+    }
 
     // Apply options
     if (opt.beautify) {
