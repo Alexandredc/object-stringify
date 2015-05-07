@@ -33,9 +33,7 @@ module.exports = function objectStringify(object, opt) {
     });
 
     // Remove quote that surrounds functions
-    o = o.replace(/"/g, "'")
-         .replace(/'function/g, 'function')
-         .replace(/}'/g, '}');
+     o = o.replace(/"(function.*?})"/g, '$1');
 
     // Remove quote that surrounds date object
     var dateObjRegex = /'new Date\('[0-Z-.]+'\)'/g;
