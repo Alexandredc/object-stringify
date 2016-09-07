@@ -23,7 +23,6 @@ var obj = {
 describe('Object-stringify testing', function(){
 
     it('Should return a string', function(){
-        
         var s = objectStringify(obj, {beautify:true, indent_size:4});
         expect(s).to.be.a('string');
     });
